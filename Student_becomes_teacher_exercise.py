@@ -67,3 +67,29 @@ def get_average(student):
     total = homework *.1 + quizzes * .3 + tests * .6
     return total
   
+''' Define a new function called get_letter_grade that has one argument called score. Expect score to be a number.
+    
+    Inside your function, test score using a chain of if: / elif: / else: statements, like so:
+    If score is 90 or above: return "A"
+    Else if score is 80 or above: return "B"
+    Else if score is 70 or above: return "C"
+    Else if score is 60 or above: return "D"
+    Otherwise: return "F"
+    Finally, test your function!
+    
+    Print the resulting letter grade with print. Call the get_letter_grade function and 
+    pass in get_average(lloyd).'''
+
+def get_letter_grade(score):
+    if score >= 90:
+        return "A"
+    elif score >=80:
+        return "B"
+    elif score >=70:
+        return "C"
+    elif score >=60:
+        return "D"
+    else:
+        return "F"
+
+print get_average(lloyd)
